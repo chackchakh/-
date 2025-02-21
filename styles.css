@@ -1,0 +1,296 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    direction: rtl;
+    background-image: url(calfia.jpg);
+    background-size: cover; /* يجعل الصورة تغطي العنصر بالكامل */
+    background-position: center; /* يضع الصورة في منتصف العنصر */
+    background-repeat: no-repeat; /* يمنع تكرار الصورة */
+    
+}
+    h1{
+        align-items: center;
+        border: solid #ecdc8c ;
+        border-radius: 30px;
+        color: #ecdc8c;
+    background: rgba(269, 00, 400, 0.2); /* أبيض مع شفافية */
+    backdrop-filter: blur(80px); /* تأثير التمويه */
+    -webkit-backdrop-filter: blur(80px); /* دعم متصفحات كروم وسفاري */
+    padding: 10px;
+        
+        font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    }
+}
+
+.container {
+    margin: 5px;
+}
+
+input, select {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    backdrop-filter: blur(10px); /* تأثير التمويه */
+    -webkit-backdrop-filter: blur(10px); /* دعم متصفحات كروم وسفاري */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+#themeSelect{
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 140px;
+    font-size: 14px; /* تقليل حجم الخط إن لزم */
+    background-color:  blanchedalmond;
+}
+#musicSelect {
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: 140px;
+    font-size: 14px; /* تقليل حجم الخط إن لزم */
+    background-color:  blanchedalmond;
+}
+#nameInput{
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    font-size: 14px; /* تقليل حجم الخط إن لزم */
+    background-color:  blanchedalmond;
+}
+/* ثيمات رمضان */
+.theme1 { background-image: url('background1.jpg'); background-size: cover; color: #fff; }
+.theme2 { background-image: url('background2.jpg'); background-size: cover; color: #fff; }
+.theme3 { background-image: url('background3.jpg'); background-size: cover; color: #fff; }
+
+.theme11 { background-image: url('background1.jpg'); background-size: cover; color: #fff; }
+.theme22 { background-image: url('background2.jpg'); background-size: cover; color: #fff; }
+.theme33 { background-image: url('background3.jpg'); background-size: cover; color: #fff; }
+
+.hidden {
+    display: none;
+    
+}
+
+.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.preview-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 30px;
+    place-items: center; /* توسيط أفقي وعمودي */
+    align-items: center;
+}
+#tasmem {
+    background-color:  aqua;
+    
+}
+/* إخفاء قائمة المشاركة افتراضيًا */
+.hidden {
+    display: none;
+}
+
+/* تنسيق قائمة المشاركة */
+#shareOptions {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#shareOptions button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#shareOptions button:hover {
+    background-color: #0056b3;
+}
+/* تنسيق الحواف الجانبية */
+.sidebar {
+    position: fixed;
+    top: 10%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+/* الحافة اليسرى */
+.left-sidebar {
+    left: 0px;
+}
+
+/* الحافة اليمنى */
+.right-sidebar {
+    right: 5px;
+}
+
+/* تنسيق الأيقونات */
+.sidebar img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sidebar img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.theme-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.theme-btn {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.green { background-color: green; }
+.red { background-color: #ffc19a; }
+.blue { background-color: #ca96ab; }
+
+.theme-selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.theme-option {
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.theme-option:hover {
+    border: 2px solid #fff;
+}
+
+.music-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.music-btn {
+    padding: 10px 15px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.preview-card {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ddd;
+    text-align: center;
+    line-height: 200px;
+    font-weight: bold;
+    color: white;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-icons {
+i {
+    font-size: 40px; /* حجم الأيقونة */
+    color: green; /* لون واتساب */
+}
+
+.fa-facebook-messenger {
+    color: #0084FF; /* لون ماسنجر */
+}
+
+
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقة تهنئة رمضان</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1> ه‍نئ احبائك بدخول شهر رمضان الفضيل</h1> <br>
+        
+     
+            
+            
+        
+            
+            
+        
+        <!-- قائمة اختيار عبارات التهنئة -->
+        <h3>اختر فئة التصميم:</h3>
+<div class="theme-buttons">
+    <button class="theme-btn green" onclick="showThemes('green')">🌿 الأخضر</button>
+    <button class="theme-btn red" onclick="showThemes('red')"> 🧡برتقالي</button>
+    <button class="theme-btn blue" onclick="showThemes('blue')">🩷 زهري</button>
+</div>
+
+<h3>اختر البطاقة:</h3>
+<div id="themeSelection" class="theme-selection"></div>
+
+        <div id="previewCard" class="preview-card"></div>
+        
+<h3>اختر الموسيقى:</h3>
+<div class="music-buttons">
+    <button class="music-btn" onclick="selectMusic('music1.mp3')">🎵 موسيقى 1</button>
+    <button class="music-btn" onclick="selectMusic('music2.mp3')">🎵 موسيقى 2</button>
+    <button class="music-btn" onclick="selectMusic('music3.mp3')">🎵 موسيقى 3</button>
+</div>
+
+<!-- عنصر عرض البطاقة المختارة -->
+
+<audio id="previewMusic" controls></audio>
+
+<!-- إدخال الاسم -->
+<input type="text" id="nameInput" placeholder="أدخل اسمك هنا">
+<button onclick="generateCard()">🎉 إنشاء البطاقة</button>
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<!-- حافة جانبية يسار -->
+<div class="sidebar left-sidebar">
+    <img src="icons.prayer.png" alt="صلاة">
+    <img src="icons.moon.png" alt="هلال">
+    <img src="icons.prayer.png" alt="فانوس">
+    <img src="icons.moon.png" alt="قرآن">
+</div>
+
+<!-- حافة جانبية يمين -->
+<div class="sidebar right-sidebar">
+    <img src="icons.prayer.png" alt="صلاة">
+    <img src="icons.moon.png" alt="هلال">
+    <img src="icons.prayer.png" alt="فانوس">
+    <img src="icons.moon.png" alt="قرآن">
+</div>
+    <script src="script.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+</body>
+</html>
