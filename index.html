@@ -11,6 +11,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
     
+
+<meta property="og:title" id="ogTitle" content="🎉 لديك رسالة مفاجئة!" />
+<meta property="og:description" id="ogDescription" content="لقد أرسلت لك رسالة خاصة، افتحها الآن! ✋" />
+<meta property="og:image" id="ogImage" content="https://yourwebsite.com/images/envelope.jpg" />
+<meta property="og:url" id="ogUrl" content="" />
+<meta name="twitter:card" content="summary_large_image" />
     
 </head>
 <body>
@@ -81,6 +87,29 @@
 </div>
     <script src="script.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    
+   <script
+
+// الحصول على البارامترات من رابط الصفحة
+const urlParams = new URLSearchParams(window.location.search);
+const userName = urlParams.get("name"); // اسم المرسل من الرابط
+const themeImage = urlParams.get("theme"); // صورة البطاقة المختارة
+const musicFile = urlParams.get("music"); // ملف الموسيقى
+
+// تغيير بيانات الميتا حسب الاسم المكتوب في البطاقة
+if (userName) {
+    document.getElementById("ogTitle").setAttribute("content", `🎉 ${userName} أرسل لك بطاقة تهنئة!`);
+    document.getElementById("ogDescription").setAttribute("content", `🎊 ${userName} أرسل لك رسالة مفاجئة بمناسبة رمضان، افتحها الآن!`);
+}
+
+// تحديث الصورة حسب التصميم المختار
+if (themeImage) {
+    document.getElementById("ogImage").setAttribute("content", themeImage);
+}
+
+// تحديث رابط المشاركة ليكون مطابقًا للبطاقة المختارة
+const currentUrl = window.location.href;
+document.getElementById("ogUrl").setAttribute("content", currentUrl);
+</script>
+       
 </body>
 </html>
