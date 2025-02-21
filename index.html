@@ -92,7 +92,7 @@
 // استخراج القيم من الرابط
 const urlParams = new URLSearchParams(window.location.search);
 const userName = urlParams.get("name") || "شخص ما";
-const themeImage = urlParams.get("theme") || "https://yourwebsite.com/images/default-theme.jpg";
+const themeImage = urlParams.get("theme") || "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mail.svg/1200px-Mail.svg.png";
 
 // تعديل ميتا تاغات المشاركة
 document.getElementById("ogTitle").setAttribute("content", `🎉 ${userName} أرسل لك رسالة مفاجئة!`);
